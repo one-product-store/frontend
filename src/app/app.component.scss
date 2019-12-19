@@ -1,17 +1,3 @@
-button {
-  background-color: #416e98;
-  border: none;
-  color: white;
-  padding: 1rem 0.5rem;
-  text-decoration: none;
-  width: 100%;
-}
-
-img {
-  padding: 0.5rem 2rem;
-  width: calc(100% - 2rem - 2rem);
-}
-
 .display-flex {
   display: flex;
 
@@ -25,26 +11,6 @@ img {
   }
 }
 
-.color-primary {
-  color: #726d6f;
-}
-
-.color-secondary {
-  color: #8c8789;
-}
-
-.color-yellow {
-  color: #f8fd8e;
-}
-
 .padding-0-1 {
   padding: 0rem 1rem;
-}
-
-.padding-0-p5 {
-  padding: 0rem 0.5rem;
-}
-
-.text-align-right {
-  text-align: right;
 }

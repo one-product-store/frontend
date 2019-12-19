@@ -1,0 +1,26 @@
+<div>
+  <img [src]="image" />
+</div>
+
+<div class="display-flex color-primary padding-0-1">
+  <h4 class="flex-basis-grow">{{ name }}</h4>
+  <h4 class="flex-basis-grow text-align-right">R{{ price | number }}</h4>
+</div>
+
+<div class="padding-0-1">
+  <i class="fal fa-star padding-0-p5"></i>
+  <i class="fal fa-star padding-0-p5"></i>
+  <i class="fal fa-star padding-0-p5"></i>
+  <i class="fal fa-star padding-0-p5"></i>
+  <i class="fal fa-star padding-0-p5"></i>
+</div>
+
+<div class="color-secondary padding-0-1">
+  <p>
+    {{ description }}
+  </p>
+</div>
+
+<div class="color-secondary padding-0-1">
+  <button (click)="onClickBuyNow()">Buy Now</button>
+</div>
