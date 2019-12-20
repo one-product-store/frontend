@@ -5,12 +5,16 @@
 export const environment = {
   production: false,
   product: {
-    description:
-      'Thermoglasses are elegant and stylish all the while being practical and easy to use. The beautiful and timeless shapes in transparent glass allow you to appreciate the rich colours of your drink while the delicate mouth-blown designs add a modern lightweight feel.',
+    description: `Made of long plush, super soft and super warm.<br />
+      Comfortable touch, 3 cm long plush hair, pets love to sleep on it.<br />
+      Pure color with cute design, it is a nice looking bed.<br />
+      Portable and lightweight.<br />
+      Easy to clean and wash.<br />
+      Non-toxic material with no smell, pets will easily adjust to it.`,
     image:
-      'https://ae01.alicdn.com/kf/Hb1e55e807dd142348f12b8f21958fdd8o/Round-Plush-Cat-Bed-House-Soft-Long-Plush-Best-Pet-Dog-Bed-For-Dogs-Products-Nest.jpg',
-    name: 'Round Plush Cat Bed',
-    price: 750,
+      'https://imgaz1.chiccdn.com/thumb/large/oaupload/newchic/images/67/BB/0f2bf59c-52cc-4558-8b27-c2533e1cf164.jpg',
+    name: 'Super Soft Round Plush Pet Bed',
+    price: 450,
   },
 };
 

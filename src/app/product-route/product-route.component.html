@@ -4,7 +4,7 @@
 
 <div class="display-flex color-primary padding-0-1">
   <h4 class="flex-basis-grow">{{ product.name }}</h4>
-  <h4 class="flex-basis-grow text-align-right">R{{ product.price | number }}</h4>
+  <h4 class="flex-basis-grow text-align-right">R{{ product.price | number: '1.2-2' }}</h4>
 </div>
 
 <div class="padding-0-1">
@@ -16,9 +16,7 @@
 </div>
 
 <div class="color-secondary padding-0-1">
-  <p>
-    {{ product.description }}
-  </p>
+  <p [innerHtml]="product.description"></p>
 </div>
 
 <div class="color-secondary padding-0-1">
