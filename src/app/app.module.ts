@@ -2,17 +2,21 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
-import { ProductRouteComponent } from './product-route/product-route.component';
 import { PurchaseRouteComponent } from './purchase-route/purchase-route.component';
+import { HomeRouteComponent } from './home-route/home-route.component';
 
 @NgModule({
-  declarations: [AppComponent, ProductRouteComponent, PurchaseRouteComponent],
+  declarations: [AppComponent, HomeRouteComponent, PurchaseRouteComponent],
   imports: [
     BrowserModule,
     RouterModule.forRoot([
       {
-        component: ProductRouteComponent,
+        component: HomeRouteComponent,
         path: '',
+      },
+      {
+        component: HomeRouteComponent,
+        path: 'home',
       },
       {
         component: PurchaseRouteComponent,

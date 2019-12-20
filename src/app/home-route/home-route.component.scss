@@ -1,0 +1,51 @@
+button {
+  background-color: #ff4610;
+  border: none;
+  color: white;
+  padding: 1rem 0.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.product-action {
+  margin: 0.5rem 1rem;
+}
+
+.product-description {
+  margin: 0.5rem 1rem;
+
+  h4 {
+    text-transform: uppercase;
+  }
+
+  label {
+    font-weight: bold;
+  }
+}
+
+.product-image {
+  img {
+    width: 100%;
+  }
+}
+
+.product-price {
+  margin: 0.2rem 1rem;
+}
+
+.product-rating {
+  margin: 0.2rem 1rem;
+
+  i {
+    margin: 0rem 0.3rem 0rem 0rem;
+  }
+}
+
+.product-title {
+  margin: 0.2rem 1rem;
+
+  h5 {
+    color: #757575;
+  }
+}

@@ -1,16 +1,37 @@
-.display-flex {
-  display: flex;
+hr {
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #757575, #ccc);
 
-  &.justify-content-space-between {
-    justify-content: space-between;
-  }
-
-  .flex-basis-grow {
-    flex-basis: 0;
-    flex-grow: 1;
+  &.short {
+    margin: 0.5rem 1rem;
   }
 }
 
-.padding-0-1 {
-  padding: 0rem 1rem;
+.footer {
+  background-color: #eeeeee;
+  font-size: small;
+  padding: 0.5rem 1rem;
+}
+
+.toolbar {
+  padding: 0.5rem 1rem;
+
+  i {
+    margin: 0rem 0.5rem 0rem 0rem;
+  }
+
+  h3 {
+    text-transform: uppercase;
+  }
+}
+
+.top-banner {
+  background-color: #262626;
+  color: #ffffff;
+  font-size: small;
+  padding: 0.3rem;
+  text-align: center;
+  text-transform: uppercase;
 }
