@@ -11,8 +11,8 @@ export class PayFastService {
 
   public redirectToPayment(description: string, name: string, price: number): void {
     const params = {
-      merchant_id: environment.production ? '14066549' : '10000100',
-      merchant_key: environment.production ? 'dquwx5n0mw8a8' : '46f0cd694581a',
+      merchant_id: environment.production ? '11223714' : '10000100',
+      merchant_key: environment.production ? 'ak5h6ln1aiwgi' : '46f0cd694581a',
       // return_url: environment.production ? `${window.location.origin}` : `https://example.com`,
       // cancel_url: environment.production ? `${window.location.origin}` : `https://example.com`,
       // notify_url: environment.production ? `${window.location.origin}` : `https://example.com`,

@@ -1,0 +1,40 @@
+button {
+  background-color: #416e98;
+  border: none;
+  color: white;
+  padding: 1rem 0.5rem;
+  text-decoration: none;
+  width: 100%;
+}
+
+input {
+  appearance: none;
+  border: 0.2rem solid #fafafa;
+  box-shadow: none;
+  font-size: 1rem;
+  outline: none;
+  padding: 0.5rem;
+}
+
+label {
+  color: #404040;
+  font-size: small;
+  text-transform: uppercase;
+}
+
+.color-secondary {
+  color: #8c8789;
+}
+
+.display-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.margin-1-0 {
+  margin: 1rem 0rem;
+}
+
+.padding-0-1 {
+  padding: 0rem 1rem;
+}

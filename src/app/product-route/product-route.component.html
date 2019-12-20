@@ -1,10 +1,10 @@
 <div>
-  <img [src]="image" />
+  <img [src]="product.image" />
 </div>
 
 <div class="display-flex color-primary padding-0-1">
-  <h4 class="flex-basis-grow">{{ name }}</h4>
-  <h4 class="flex-basis-grow text-align-right">R{{ price | number }}</h4>
+  <h4 class="flex-basis-grow">{{ product.name }}</h4>
+  <h4 class="flex-basis-grow text-align-right">R{{ product.price | number }}</h4>
 </div>
 
 <div class="padding-0-1">
@@ -17,10 +17,10 @@
 
 <div class="color-secondary padding-0-1">
   <p>
-    {{ description }}
+    {{ product.description }}
   </p>
 </div>
 
 <div class="color-secondary padding-0-1">
-  <button (click)="onClickBuyNow()">Buy Now</button>
+  <button (click)="onClickPurchase()">Purchase</button>
 </div>

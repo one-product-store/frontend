@@ -1,17 +1,16 @@
 export interface IPurchase {
-  name: string;
-
-  price: number;
-
+  userInformation: {
+    emailAddress: string;
+  };
   shippingInformation: {
-    name: string;
-    mobile: string;
     address: {
-      street: string;
+      city: string;
       country: string;
       region: string;
-      city: string;
+      street: string;
       zipCode: string;
     };
+    mobile: string;
+    name: string;
   };
 }
