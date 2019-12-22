@@ -1,14 +1,18 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
-import { PurchaseRouteComponent } from './purchase-route/purchase-route.component';
 import { HomeRouteComponent } from './home-route/home-route.component';
+import { PurchaseRouteComponent } from './purchase-route/purchase-route.component';
 
 @NgModule({
+  bootstrap: [AppComponent],
   declarations: [AppComponent, HomeRouteComponent, PurchaseRouteComponent],
   imports: [
     BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
     RouterModule.forRoot([
       {
         component: HomeRouteComponent,
@@ -25,6 +29,5 @@ import { HomeRouteComponent } from './home-route/home-route.component';
     ]),
   ],
   providers: [],
-  bootstrap: [AppComponent],
 })
 export class AppModule {}

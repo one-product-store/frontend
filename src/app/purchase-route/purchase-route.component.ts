@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { environment } from 'src/environments/environment';
 import { PayFastService } from '../core';
 
@@ -9,7 +9,11 @@ import { PayFastService } from '../core';
   templateUrl: './purchase-route.component.html',
 })
 export class PurchaseRouteComponent implements OnInit {
-  public formGroup: FormGroup = null;
+  public formGroup: FormGroup = new FormGroup({
+    emailAddress: new FormControl(null, [Validators.required]),
+    mobile: new FormControl(null, [Validators.required]),
+    name: new FormControl(null, [Validators.required]),
+  });
 
   public product = environment.product;
 
@@ -18,6 +22,6 @@ export class PurchaseRouteComponent implements OnInit {
   public ngOnInit(): void {}
 
   public onClickContinueToPayment(): void {
-    this.payFastService.redirectToPayment(this.product.description, this.product.name, this.product.price);
+    this.payFastService.redirectToPayment(this.product.description, null, this.product.name, this.product.price);
   }
 }
