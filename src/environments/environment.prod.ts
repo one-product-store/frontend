@@ -1,11 +1,9 @@
 export const environment = {
   production: true,
   product: {
-    description:
-      'Thermoglasses are elegant and stylish all the while being practical and easy to use. The beautiful and timeless shapes in transparent glass allow you to appreciate the rich colours of your drink while the delicate mouth-blown designs add a modern lightweight feel.',
-    image:
-      'https://ae01.alicdn.com/kf/Hb1e55e807dd142348f12b8f21958fdd8o/Round-Plush-Cat-Bed-House-Soft-Long-Plush-Best-Pet-Dog-Bed-For-Dogs-Products-Nest.jpg',
-    name: 'Round Plush Cat Bed',
-    price: 750,
+    description: `Perfect round fluffy bed for your pet to curl up and snuggle in. Raised sides help with comfort and a sense of security. This deep crevice also allows your pet to burrow helping them get restful sleep for improved behavior and better health. The raised sides also give your pet a comfy headrest.`,
+    image: './../../assets/images/product.jpg',
+    name: 'Modern Fluffy Pet Bed',
+    price: 450,
   },
 };

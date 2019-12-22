@@ -1,21 +1,23 @@
 import { Component, OnInit } from '@angular/core';
-import { environment } from 'src/environments/environment';
 import { Router } from '@angular/router';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-home-route',
-  templateUrl: './home-route.component.html',
   styleUrls: ['./home-route.component.scss'],
+  templateUrl: './home-route.component.html',
 })
 export class HomeRouteComponent implements OnInit {
+  public product: any = environment.product;
+
   constructor(protected router: Router) {}
 
   public ngOnInit(): void {}
 
   public onClickPurchase(): void {
     (window as any).fbq('track', 'InitiateCheckout', {
-      value: 249.0,
       currency: 'USD',
+      value: 249.0,
     });
 
     this.router.navigateByUrl('purchase');

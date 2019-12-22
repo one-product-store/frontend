@@ -1,13 +1,16 @@
 import { Component, OnInit } from '@angular/core';
-import { PayFastService } from '../core';
+import { FormGroup } from '@angular/forms';
 import { environment } from 'src/environments/environment';
+import { PayFastService } from '../core';
 
 @Component({
   selector: 'app-purchase-route',
-  templateUrl: './purchase-route.component.html',
   styleUrls: ['./purchase-route.component.scss'],
+  templateUrl: './purchase-route.component.html',
 })
 export class PurchaseRouteComponent implements OnInit {
+  public formGroup: FormGroup = null;
+
   public product = environment.product;
 
   constructor(protected payFastService: PayFastService) {}

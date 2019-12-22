@@ -5,15 +5,9 @@
 export const environment = {
   production: false,
   product: {
-    description: `Made of long plush, super soft and super warm.<br />
-      Comfortable touch, 3 cm long plush hair, pets love to sleep on it.<br />
-      Pure color with cute design, it is a nice looking bed.<br />
-      Portable and lightweight.<br />
-      Easy to clean and wash.<br />
-      Non-toxic material with no smell, pets will easily adjust to it.`,
-    image:
-      'https://imgaz1.chiccdn.com/thumb/large/oaupload/newchic/images/67/BB/0f2bf59c-52cc-4558-8b27-c2533e1cf164.jpg',
-    name: 'Super Soft Round Plush Pet Bed',
+    description: `Perfect round fluffy bed for your pet to curl up and snuggle in. Raised sides help with comfort and a sense of security. This deep crevice also allows your pet to burrow helping them get restful sleep for improved behavior and better health. The raised sides also give your pet a comfy headrest.`,
+    image: './../../assets/images/product.jpg',
+    name: 'Modern Fluffy Pet Bed',
     price: 450,
   },
 };
