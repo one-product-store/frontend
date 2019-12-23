@@ -22,4 +22,4 @@ RUN npm install
 
 RUN npm run build
 
-RUN cp -r dist/precision-cut/. /usr/share/nginx/html
+RUN cp -r dist/feature-toggle-ui/. /usr/share/nginx/html
